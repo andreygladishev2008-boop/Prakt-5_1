@@ -1,0 +1,99 @@
+/* Welcome Page */
+.welcome-page {
+    background-color: #2c3e50;
+}
+
+.welcome-title {
+    color: white;
+    font-size: 24;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20;
+}
+
+.welcome-entry {
+    background-color: white;
+    color: #333;
+    margin-bottom: 10;
+    padding: 10;
+    border-radius: 4;
+}
+
+.welcome-password {
+    background-color: white;
+    color: #333;
+    margin-bottom: 15;
+    padding: 10;
+    border-radius: 4;
+}
+
+.welcome-signin-btn {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 18;
+    font-weight: bold;
+    border-radius: 4;
+    margin-bottom: 10;
+    padding: 12;
+}
+
+.welcome-remember-label {
+    color: white;
+    font-size: 14;
+}
+
+.welcome-forgot-label {
+    color: #ecf0f1;
+    font-size: 14;
+    text-decoration: underline;
+}
+
+/* MainPage tabs */
+.tab-page {
+    background-color: #f5f5f5;
+}
+
+/* Page1 - Credit Calculator */
+.credit-label {
+    color: #333;
+    font-size: 16;
+    margin-bottom: 5;
+}
+
+.credit-entry {
+    background-color: white;
+    color: #333;
+    margin-bottom: 10;
+    padding: 8;
+    border-radius: 4;
+}
+
+.credit-slider {
+    margin-bottom: 10;
+}
+
+.credit-result-label {
+    color: #2c3e50;
+    font-size: 16;
+    font-weight: bold;
+}
+
+/* Page2 - Currency Rates */
+.currency-header {
+    color: #2c3e50;
+    font-size: 18;
+    font-weight: bold;
+    margin-bottom: 10;
+}
+
+.currency-label {
+    color: #333;
+    font-size: 16;
+    margin-bottom: 5;
+}
+
+.currency-date {
+    color: #555;
+    font-size: 14;
+    margin-top: 10;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zad_5_1_Gladishev.Page1"
+             Title="Кредитный калькулятор"
+             StyleClass="tab-page">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="10">
+
+                <Label Text="Сумма кредита:"
+                       StyleClass="credit-label" />
+                <Entry x:Name="CreditSum"
+                       Keyboard="Numeric"
+                       StyleClass="credit-entry"
+                       TextChanged="OnDataChanged" />
+
+                <Label Text="Срок (месяцев):"
+                       StyleClass="credit-label" />
+                <Entry x:Name="TimeCredit"
+                       Keyboard="Numeric"
+                       StyleClass="credit-entry"
+                       TextChanged="OnDataChanged" />
+
+                <Label Text="Вид платежа:"
+                       StyleClass="credit-label" />
+                <Picker x:Name="TypePicker"
+                        SelectedIndex="0"
+                        StyleClass="credit-entry"
+                        SelectedIndexChanged="OnDataChanged">
+                    <Picker.Items>
+                        <x:String>Аннуитетный</x:String>
+                        <x:String>Дифференцированный</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Процентная ставка"
+                       StyleClass="credit-label" />
+                <Slider x:Name="RateSlider"
+                        Minimum="0" Maximum="100" Value="50"
+                        StyleClass="credit-slider"
+                        ValueChanged="OnDataChanged" />
+
+                <Label Text="Ежемесячный платёж:"
+                       StyleClass="credit-label" />
+                <Label x:Name="Payment"
+                       StyleClass="credit-result-label" />
+
+                <Label Text="Общая сумма:"
+                       StyleClass="credit-label" />
+                <Label x:Name="Sum"
+                       StyleClass="credit-result-label" />
+
+                <Label Text="Переплата:"
+                       StyleClass="credit-label" />
+                <Label x:Name="Overpayment"
+                       StyleClass="credit-result-label" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

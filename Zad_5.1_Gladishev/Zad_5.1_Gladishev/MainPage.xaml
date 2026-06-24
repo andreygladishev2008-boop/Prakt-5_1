@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Zad_5_1_Gladishev"
+            x:Class="Zad_5_1_Gladishev.MainPage"
+            StyleClass="tab-page">
+
+    <TabbedPage.Children>
+        <local:Page1 />
+        <local:Page2 />
+    </TabbedPage.Children>
+
+</TabbedPage>

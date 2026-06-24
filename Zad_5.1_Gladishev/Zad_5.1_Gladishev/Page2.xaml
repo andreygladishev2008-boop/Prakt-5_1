@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zad_5_1_Gladishev.Page2"
+             Title="Курсы валют"
+             StyleClass="tab-page">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="10">
+
+            <Label Text="Центробанк РФ:"
+                   StyleClass="currency-header" />
+
+            <Label x:Name="USD"
+                   Text="USD"
+                   StyleClass="currency-label" />
+
+            <Label x:Name="EUR"
+                   Text="EUR"
+                   StyleClass="currency-label" />
+
+            <Label Text="Текущая дата:"
+                   StyleClass="currency-date" />
+
+            <DatePicker x:Name="myDatePicker"
+                        FontSize="Medium"
+                        DateSelected="OnDateSelected" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
