@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zad_5_2_Gladishev.ElementsPage"
+             Title="Элементы"
+             StyleClass="elements-page">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15" Spacing="12">
+
+                <Label Text="Вариант 2 — Элементы управления"
+                       StyleClass="page-title" />
+
+                <!-- Dropdown -->
+                <Label Text="Выпадающий список:" StyleClass="section-label" />
+                <Picker x:Name="DropdownPicker"
+                        Title="Select One"
+                        StyleClass="dropdown-picker"
+                        SelectedIndexChanged="OnDropdownChanged">
+                    <Picker.Items>
+                        <x:String>Select One</x:String>
+                        <x:String>Select Two</x:String>
+                        <x:String>Select Three</x:String>
+                        <x:String>Select Four</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <!-- Sliders -->
+                <Label Text="Слайдеры:" StyleClass="section-label" />
+                <Slider x:Name="Slider1"
+                        Minimum="0" Maximum="100" Value="30"
+                        StyleClass="blue-slider"
+                        ValueChanged="OnSliderChanged" />
+                <Label x:Name="Slider1Value" Text="30"
+                       StyleClass="slider-value" />
+
+                <Slider x:Name="Slider2"
+                        Minimum="0" Maximum="50" Value="25"
+                        StyleClass="blue-slider"
+                        ValueChanged="OnSliderChanged" />
+                <Label x:Name="Slider2Value" Text="25"
+                       StyleClass="slider-value" />
+
+                <Slider x:Name="Slider3"
+                        Minimum="0" Maximum="200" Value="100"
+                        StyleClass="blue-slider"
+                        ValueChanged="OnSliderChanged" />
+                <Label x:Name="Slider3Value" Text="100"
+                       StyleClass="slider-value" />
+
+                <!-- Toggle Switches -->
+                <Label Text="Переключатели:" StyleClass="section-label" />
+                <Grid ColumnDefinitions="*, *" RowDefinitions="Auto, Auto" ColumnSpacing="15" RowSpacing="10">
+                    <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" Spacing="8">
+                        <Label Text="OFF" StyleClass="toggle-label" VerticalOptions="Center" />
+                        <Switch x:Name="Toggle1" IsToggled="False"
+                                StyleClass="toggle-switch"
+                                Toggled="OnToggleToggled" />
+                        <Label Text="ON" StyleClass="toggle-label" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Grid.Row="0" Orientation="Horizontal" Spacing="8">
+                        <Label Text="OFF" StyleClass="toggle-label" VerticalOptions="Center" />
+                        <Switch x:Name="Toggle2" IsToggled="True"
+                                StyleClass="toggle-switch"
+                                Toggled="OnToggleToggled" />
+                        <Label Text="ON" StyleClass="toggle-label" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Horizontal" Spacing="8">
+                        <CheckBox x:Name="Check1" IsChecked="True"
+                                  StyleClass="toggle-checkbox" />
+                        <Label Text="Выбрано" StyleClass="toggle-label" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Grid.Row="1" Orientation="Horizontal" Spacing="8">
+                        <CheckBox x:Name="Check2" IsChecked="False"
+                                  StyleClass="toggle-checkbox" />
+                        <Label Text="Не выбрано" StyleClass="toggle-label" VerticalOptions="Center" />
+                    </StackLayout>
+                </Grid>
+
+                <!-- Buttons -->
+                <Label Text="Кнопки:" StyleClass="section-label" />
+
+                <Button x:Name="GradientButton"
+                        Text="BUTTON"
+                        StyleClass="btn-gradient"
+                        Clicked="OnButtonClicked" />
+
+                <Button x:Name="WhiteButton"
+                        Text="BUTTON"
+                        StyleClass="btn-white"
+                        Clicked="OnButtonClicked" />
+
+                <Button x:Name="OutlineButton"
+                        Text="BUTTON"
+                        StyleClass="btn-outline"
+                        Clicked="OnButtonClicked" />
+
+                <Button x:Name="OutlineRedButton"
+                        Text="BUTTON"
+                        StyleClass="btn-outline-red"
+                        Clicked="OnButtonClicked" />
+
+                <!-- Icon Buttons -->
+                <Label Text="Кнопки с иконками:" StyleClass="section-label" />
+                <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="10">
+                    <Button Grid.Column="0" Text=">" StyleClass="btn-icon-gradient" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="1" Text="+" StyleClass="btn-icon-gradient" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="2" Text="&#9654;" StyleClass="btn-icon-gradient" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="3" Text="&#10003;" StyleClass="btn-icon-gradient" Clicked="OnButtonClicked" />
+                </Grid>
+
+                <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="10">
+                    <Button Grid.Column="0" Text=">" StyleClass="btn-icon-dark" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="1" Text="+" StyleClass="btn-icon-dark" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="2" Text="&#9654;" StyleClass="btn-icon-dark" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="3" Text="&#10003;" StyleClass="btn-icon-dark" Clicked="OnButtonClicked" />
+                </Grid>
+
+                <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="10">
+                    <Button Grid.Column="0" Text=">" StyleClass="btn-icon-outline" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="1" Text="+" StyleClass="btn-icon-outline" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="2" Text="&#9654;" StyleClass="btn-icon-outline" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="3" Text="&#10003;" StyleClass="btn-icon-outline" Clicked="OnButtonClicked" />
+                </Grid>
+
+                <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="10">
+                    <Button Grid.Column="0" Text=">" StyleClass="btn-icon-outline-red" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="1" Text="+" StyleClass="btn-icon-outline-red" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="2" Text="&#9654;" StyleClass="btn-icon-outline-red" Clicked="OnButtonClicked" />
+                    <Button Grid.Column="3" Text="&#10003;" StyleClass="btn-icon-outline-red" Clicked="OnButtonClicked" />
+                </Grid>
+
+                <!-- Static Button (Variant 2) -->
+                <Button x:Name="StaticButton"
+                        Text="Static"
+                        StyleClass="btn-gradient"
+                        Clicked="OnStaticClicked" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

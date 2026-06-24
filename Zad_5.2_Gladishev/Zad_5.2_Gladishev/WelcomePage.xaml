@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zad_5_2_Gladishev.WelcomePage"
+             Title="Welcome"
+             StyleClass="welcome-page">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Frame BackgroundColor="#2c3e50"
+                   CornerRadius="10"
+                   Padding="30"
+                   Margin="20"
+                   HasShadow="True">
+
+                <StackLayout Spacing="15">
+
+                    <Label Text="Welcome"
+                           StyleClass="welcome-title" />
+
+                    <Entry x:Name="UsernameEntry"
+                           Placeholder="Username"
+                           StyleClass="welcome-entry" />
+
+                    <Entry x:Name="PasswordEntry"
+                           Placeholder="Password"
+                           IsPassword="True"
+                           StyleClass="welcome-password" />
+
+                    <Button x:Name="SignInButton"
+                            Text="Sign in"
+                            StyleClass="welcome-signin-btn"
+                            Clicked="OnSignInClicked" />
+
+                    <Grid ColumnDefinitions="*, *">
+                        <StackLayout Grid.Column="0" Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox x:Name="RememberMeCheckBox" VerticalOptions="Center" />
+                            <Label Text="Remember me"
+                                   StyleClass="welcome-remember-label"
+                                   VerticalOptions="Center"
+                                   Margin="5,0,0,0" />
+                        </StackLayout>
+                        <Label Grid.Column="1"
+                               Text="I forgot!"
+                               StyleClass="welcome-forgot-label"
+                               HorizontalOptions="End"
+                               VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnForgotTapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

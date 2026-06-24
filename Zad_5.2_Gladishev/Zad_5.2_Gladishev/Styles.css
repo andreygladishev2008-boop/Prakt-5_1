@@ -1,0 +1,223 @@
+/* Welcome Page */
+.welcome-page {
+    background-color: #2c3e50;
+}
+
+.welcome-title {
+    color: white;
+    font-size: 24;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20;
+}
+
+.welcome-entry {
+    background-color: white;
+    color: #333;
+    margin-bottom: 10;
+    padding: 10;
+    border-radius: 4;
+}
+
+.welcome-password {
+    background-color: white;
+    color: #333;
+    margin-bottom: 15;
+    padding: 10;
+    border-radius: 4;
+}
+
+.welcome-signin-btn {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 18;
+    font-weight: bold;
+    border-radius: 4;
+    margin-bottom: 10;
+    padding: 12;
+}
+
+.welcome-remember-label {
+    color: white;
+    font-size: 14;
+}
+
+.welcome-forgot-label {
+    color: #ecf0f1;
+    font-size: 14;
+    text-decoration: underline;
+}
+
+/* Elements Page */
+.elements-page {
+    background-color: #f5f5f5;
+}
+
+.page-title {
+    color: #2c3e50;
+    font-size: 20;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10;
+}
+
+.section-label {
+    color: #555;
+    font-size: 16;
+    font-weight: bold;
+    margin-top: 5;
+}
+
+/* Dropdown */
+.dropdown-picker {
+    background-color: white;
+    color: #333;
+    border-radius: 4;
+}
+
+/* Sliders */
+.blue-slider {
+    accent-color: #3498db;
+}
+
+.slider-value {
+    color: #3498db;
+    font-size: 14;
+    text-align: center;
+}
+
+/* Toggle Switches */
+.toggle-label {
+    color: #333;
+    font-size: 14;
+}
+
+.toggle-switch {
+    accent-color: #3498db;
+}
+
+.toggle-checkbox {
+    accent-color: #3498db;
+}
+
+/* Buttons - Gradient Pink/Red (Variant 2) */
+.btn-gradient {
+    background: linear-gradient(to right, #e74c3c, #e91e63);
+    background-color: #e91e63;
+    color: white;
+    font-weight: bold;
+    font-size: 16;
+    border-radius: 25;
+    margin-bottom: 5;
+    padding: 12;
+}
+
+/* White Button */
+.btn-white {
+    background-color: white;
+    color: #333;
+    border-color: #ddd;
+    border-width: 1;
+    font-weight: bold;
+    font-size: 16;
+    border-radius: 25;
+    margin-bottom: 5;
+    padding: 12;
+}
+
+/* Outline Button */
+.btn-outline {
+    background-color: transparent;
+    color: #e74c3c;
+    border-color: #e74c3c;
+    border-width: 2;
+    font-weight: bold;
+    font-size: 16;
+    border-radius: 25;
+    margin-bottom: 5;
+    padding: 12;
+}
+
+/* Outline Red Button */
+.btn-outline-red {
+    background-color: transparent;
+    color: #e74c3c;
+    border-color: #e74c3c;
+    border-width: 2;
+    font-weight: bold;
+    font-size: 16;
+    border-radius: 25;
+    margin-bottom: 5;
+    padding: 12;
+}
+
+/* Icon Buttons */
+.btn-icon-gradient {
+    background-color: #e91e63;
+    color: white;
+    font-size: 18;
+    font-weight: bold;
+    border-radius: 25;
+    height-request: 45;
+    width-request: 45;
+    padding: 0;
+}
+
+.btn-icon-dark {
+    background-color: #2c3e50;
+    color: white;
+    font-size: 18;
+    font-weight: bold;
+    border-radius: 25;
+    height-request: 45;
+    width-request: 45;
+    padding: 0;
+}
+
+.btn-icon-outline {
+    background-color: transparent;
+    color: #e74c3c;
+    border-color: #e74c3c;
+    border-width: 2;
+    font-size: 18;
+    font-weight: bold;
+    border-radius: 25;
+    height-request: 45;
+    width-request: 45;
+    padding: 0;
+}
+
+.btn-icon-outline-red {
+    background-color: transparent;
+    color: #e74c3c;
+    border-color: #e74c3c;
+    border-width: 2;
+    font-size: 18;
+    font-weight: bold;
+    border-radius: 25;
+    height-request: 45;
+    width-request: 45;
+    padding: 0;
+}
+
+/* Result Page */
+.result-page {
+    background-color: #f5f5f5;
+}
+
+.result-label {
+    color: #555;
+    font-size: 14;
+    font-weight: bold;
+}
+
+.result-value {
+    color: #2c3e50;
+    font-size: 18;
+    font-weight: bold;
+}
+
+.result-description {
+    color: #333;
+    font-size: 16;
+}

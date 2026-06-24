@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zad_5_2_Gladishev.ResultPage"
+             Title="Результат"
+             StyleClass="result-page">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="15">
+
+            <Label Text="Результат"
+                   StyleClass="page-title" />
+
+            <Frame BackgroundColor="#f8f9fa"
+                   CornerRadius="8"
+                   Padding="15"
+                   HasShadow="True">
+
+                <StackLayout Spacing="10">
+
+                    <Label Text="Выбранное значение:"
+                           StyleClass="result-label" />
+
+                    <Label x:Name="SelectedItemLabel"
+                           Text=""
+                           StyleClass="result-value" />
+
+                    <Label Text="Расшифровка:"
+                           StyleClass="result-label" />
+
+                    <Label x:Name="DescriptionLabel"
+                           Text=""
+                           StyleClass="result-description" />
+
+                    <Label Text="Максимум слайдера:"
+                           StyleClass="result-label" />
+
+                    <Label x:Name="MaxSliderLabel"
+                           Text=""
+                           StyleClass="result-value" />
+
+                </StackLayout>
+            </Frame>
+
+            <Button Text="Назад"
+                    StyleClass="btn-gradient"
+                    Clicked="OnBackClicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

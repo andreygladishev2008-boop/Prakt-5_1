@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zad_5_2_Gladishev.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <StyleSheet Source="Styles.css" />
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#2c3e50" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
